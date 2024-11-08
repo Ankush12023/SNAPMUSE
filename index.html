@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left side: Controls -->
+        <div class="controls">
+            <h1>Sorting Visualizer Controls</h1>
+            <button id="generateArray">Generate Random Array</button>
+            
+            <label for="sortAlgo">Choose Sorting Algorithm:</label>
+            <select id="sortAlgo">
+                <option value="bubble">Bubble Sort</option>
+                <option value="quick">Quick Sort</option>
+                <option value="selection">Selection Sort</option>
+            </select>
+
+            <label for="speed">Sorting Speed:</label>
+            <input type="range" id="speed" min="1" max="100" value="50">
+            
+            <label for="color">Bar Color:</label>
+            <input type="color" id="barColor" value="#3498db">
+            
+            <button id="sortArray">Sort Array</button>
+        </div>
+
+        <!-- Right side: Visualizer -->
+        <div class="visualizer">
+            <h1>Array Visualizer</h1>
+            <div class="array-container" id="arrayContainer"></div>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
